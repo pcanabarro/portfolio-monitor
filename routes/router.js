@@ -6,7 +6,7 @@ class Router {
   static getRouter() {
     const router = express.Router()
 
-    router.get('/', homeController.getHome)
+    router.get('/', homeController.portfolioTracker)
     router.get('/data', assetsController.getAssets)
     router.get('/price/:ticket', assetsController.getAssetUsdPrice)
 
